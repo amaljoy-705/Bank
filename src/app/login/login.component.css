@@ -1,0 +1,227 @@
+/* .g{
+    background-color: rgba(245, 245, 220, 0.212);
+    border-radius: 30px;
+} */
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+
+/* General styles */
+/* 
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+} */
+
+body {
+
+
+  font-family: 'Roboto', sans-serif;
+
+
+  gap: 30px;
+
+
+}
+
+/* General styles end */
+
+.inputBox {
+
+  position: relative;
+
+  width: 250px;
+
+}
+
+.inputBox input {
+
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid rgb(255, 255, 255, 0.7);
+
+  background: rgb(0, 79, 148);
+
+  border-radius: 5px;
+
+  outline: none;
+
+  color: #fff;
+
+  font-size: 1em;
+  
+  transition: 0.5s;
+
+}
+
+.inputBox span {
+  
+
+  position: absolute;
+
+  left: 0;
+
+  padding: 10px;
+
+  pointer-events: none;
+
+  font-size: 1.1em;
+
+  letter-spacing: 0.2em;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  text-transform: uppercase;
+
+  transition: 0.5s;
+
+}
+
+.inputBox input:valid ~ span,
+
+.inputBox input:focus ~ span {
+
+  color:  rgb(250, 166, 26);
+
+  transform: translateX(10px) translateY(-7px);
+
+  font-size: 0.65em;
+
+  padding: 0 10px;
+
+  background:rgb(0, 79, 148);
+
+  border-left: 1px solid rgb(250, 166, 26);
+
+  border-right: 1px solid rgb(250, 166, 26);
+
+  letter-spacing: 0.2em;
+
+}
+
+.inputBox:nth-child(2) input:valid ~ span,
+
+.inputBox:nth-child(2) input:focus ~ span {
+
+  background:  rgb(250, 166, 26);
+
+  color: rgb(0, 79, 148);
+
+  border-radius: 2px;
+
+}
+
+.inputBox input:valid,
+
+.inputBox input:focus {
+
+  border: 1px solid rgb(250, 166, 26);
+
+}
+/* @media (max-width:8px) {
+  .inputBox {
+    margin-left: 20px;
+
+    position: absolute;
+  
+    width: 250px;
+  
+  }
+  
+  .inputBox input {
+    margin-left: 20px;
+
+    width: 100%;
+  
+    padding: 10px;
+  
+    border: 1px solid rgb(255, 255, 255, 0.7);
+  
+    background: rgb(0, 79, 148);
+  
+    border-radius: 5px;
+  
+    outline: none;
+  
+    color: #fff;
+  
+    font-size: 1em;
+  
+    transition: 0.5s;
+  
+  }
+  
+  .inputBox span {
+    
+    margin-left: 20px;
+
+    position: absolute;
+  
+    left: 0;
+  
+    padding: 10px;
+  
+    pointer-events: none;
+  
+    font-size: 1.1em;
+  
+    letter-spacing: 0.2em;
+  
+    color: rgba(255, 255, 255, 0.7);
+  
+    text-transform: uppercase;
+  
+    transition: 0.5s;
+  
+  }
+  
+  .inputBox input:valid ~ span,
+  
+  .inputBox input:focus ~ span {
+    margin-left: 20px;
+
+    color:  rgb(250, 166, 26);
+  
+    transform: translateX(10px) translateY(-7px);
+  
+    font-size: 0.65em;
+  
+    padding: 0 10px;
+  
+    background:rgb(0, 79, 148);
+  
+    border-left: 1px solid rgb(250, 166, 26);
+  
+    border-right: 1px solid rgb(250, 166, 26);
+  
+    letter-spacing: 0.2em;
+  
+  }
+  
+  .inputBox:nth-child(2) input:valid ~ span,
+  
+  .inputBox:nth-child(2) input:focus ~ span {
+    margin-left: 20px;
+
+    background:  rgb(250, 166, 26);
+  
+    color: rgb(0, 79, 148);
+  
+    border-radius: 2px;
+  
+  }
+  
+  .inputBox input:valid,
+  
+  .inputBox input:focus {
+    margin-left: 20px;
+
+    border: 1px solid rgb(250, 166, 26);
+  
+  }
+} */

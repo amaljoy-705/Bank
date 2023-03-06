@@ -1,0 +1,37 @@
+<!-- <div class="container w-25 p-3 text-center g" style="margin-top: 150px;">
+    <h1 class="text-center text white">LOGIN</h1>
+    <form action="">
+        <input class="form-control" type="text" placeholder="account number"><br>
+        <input class="form-control" type="password" placeholder="password"><br>
+
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div> -->
+<div class="p-5 ">
+  <h3 class="text-white container ">{{data}}</h3>
+</div>
+<div class="container w-25 p-3 text-center g" style=" margin-right: 500px; ">
+  <div class="inputBox   "> 
+    <h1 class="text-center text white">LOGIN</h1>
+
+  
+    <!-- <input type="text" id="acn" name="acno"[placeholder]="data1" required> -->
+    <input type="text" (change)="acnoChg($event)" id="acn" name="acno" required>
+
+    <span>Account Number</span> 
+  
+   </div> <br>
+  
+   <div class="inputBox"> 
+  
+    <div class="inputBox"> 
+  
+     <input type="password" (change)="pasChg($event)" id="psw" name="password" required> <span>password</span>  
+
+  
+    </div> <br>
+    <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+
+   </div> 
+</div>
