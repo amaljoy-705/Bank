@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class LoginComponent {
   data="Your Perfect Banking Partner"
   data1="Account Number"
-  // acno:any
-  // pas:any
+  acno:any
+  pas:any
   userDetails:any={
     1000:{username:"anu",acno:1000,password:"abc123",balance:0},
     1002:{username:"amal",acno:1002,password:"abc123",balance:0},
@@ -20,10 +20,32 @@ export class LoginComponent {
 
 
   
-  login(acn:any,psw:any){
+  // login(acn:any,psw:any){
+  //   // alert('Login worked')
+  //   var acn=acn.value
+  //   var psw=psw.value
+   
+  //   var userDetails=this.userDetails
+  //   if(acn in userDetails){
+
+  //   if(psw==userDetails[acn]["password"]){
+  //     alert('login success')
+  //   }
+  //   else{
+  //     alert('incorret password')
+  //   }
+  // }
+  //   else{
+  //     alert('incorrect acont num')
+  //   }
+  
+  // }
+
+  login(){
     // alert('Login worked')
-    var acn=acn.value
-    var psw=psw.value
+    var acn=this.acno
+    var psw=this.pas
+ 
    
     var userDetails=this.userDetails
     if(acn in userDetails){

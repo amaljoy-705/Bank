@@ -17,7 +17,7 @@
 
   
     <!-- <input type="text" id="acn" name="acno"[placeholder]="data1" required> -->
-    <input type="text"#acn id="acn" name="acno" required>
+    <input type="text" [(ngModel)]="acno" id="acn" name="acno" required>
 
     <span>Account Number</span> 
   
@@ -27,11 +27,11 @@
   
     <div class="inputBox"> 
   
-     <input type="password" #psw id="psw" name="password" required> <span>password</span>  
+     <input type="password" [(ngModel)]="pas" id="psw" name="password" required> <span>password</span>  
 
   
     </div> <br>
-    <button type="submit" class="btn btn-primary" (click)="login(acn,psw)">Login</button>
+    <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
 
    </div> 
 </div>
