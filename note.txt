@@ -62,3 +62,33 @@ html - view
 
    2.1 - ngModel  [(ngModel)]="variable"
        - FormsModule  -> module used to applay ngModel
+
+Path settings
+-------------
+
+   path set in root module routing file  
+   each page need different paths 
+   landing page path is empty
+
+Redirection in angular
+----------------------
+
+   method  -> navigateByUrl(path)
+   class   -> Router
+   module  -> AppRoutingModule
+
+
+   folder   -   file    -   class   -   methods
+   package     module
+
+   Dependency Injection
+   --------------------
+
+   to use a method of class in another class
+
+   accessSpecifier refference:ClassName
+
+   In constructor    -->   access specifier -> priate /public
+
+   in private only access by its on class
+   in publc it can access all the classes in that class.
