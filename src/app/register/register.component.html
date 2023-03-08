@@ -1,1 +1,54 @@
-<p>register works!</p>
+<!-- <form class="form p-5 w-50  " action="#" method="POST">
+    <div class="form-group">
+      <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+    </div>
+    <div class="form-group ">
+      <input type="email" class="form-control " id="inputEmail" placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+      <textarea class="form-control " id="inputMessage" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary te ">Submit</button>
+  </form>
+  
+  
+  
+  
+  
+   -->
+   <div class="p-5 ">
+  </div>
+  <div class="container w-25  text-center g p-5" style=" margin-right: 500px; ">
+    <div class="inputBox   "> 
+      <h1 class="text-center text white">REGISTER</h1>
+  
+    
+      <!-- <input type="text" id="acn" name="acno"[placeholder]="data1" required> -->
+
+      <div class="inputBox"> 
+    
+        <input type="text" [(ngModel)]="acno"  id="acn" name="acno" required> <span>Account Number</span>  
+   
+     
+       </div> <br>
+      <input type="text" [(ngModel)]="uname"  id="name" name="name" required>
+  
+      <span>User Name</span> 
+    
+     </div> <br>
+    
+     <div class="inputBox"> 
+    
+     
+      <div class="inputBox"> 
+    
+        <input type="password" [(ngModel)]="psw"  id="psw" name="password" required> <span>password</span>  
+   
+     
+       </div> <br>
+      <button (click)="register()" type="submit" class="btn btn-primary" >Register</button>
+      <p class="mt-2 text-white text-center">Alredy have account <a class="text-warning" routerLink="login">Login</a></p>
+  
+     </div> 
+  </div>
+  

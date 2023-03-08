@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-login',
@@ -11,14 +12,14 @@ export class LoginComponent {
   data1="Account Number"
   acno:any
   pas:any
-  userDetails:any={
-    1000:{username:"anu",acno:1000,password:"abc123",balance:0},
-    1002:{username:"amal",acno:1002,password:"abc123",balance:0},
-    1003:{username:"arun",acno:1003,password:"abc123",balance:0},
-    1004:{username:"abhi",acno:1004,password:"abc123",balance:0},
-  }
+  // userDetails:any={
+  //   1000:{username:"anu",acno:1000,password:"abc123",balance:0},
+  //   1002:{username:"amal",acno:1002,password:"abc123",balance:0},
+  //   1003:{username:"arun",acno:1003,password:"abc123",balance:0},
+  //   1004:{username:"abhi",acno:1004,password:"abc123",balance:0},
+  // }
 
-constructor(private router:Router){}
+constructor(private router:Router, private ds:DataService){}
 
   
   // login(acn:any,psw:any){
@@ -46,9 +47,10 @@ constructor(private router:Router){}
     // alert('Login worked')
     var acn=this.acno
     var psw=this.pas
+
  
    
-    var userDetails=this.userDetails
+    var userDetails=this.ds.userDetails
     if(acn in userDetails){
 
     if(psw==userDetails[acn]["password"]){

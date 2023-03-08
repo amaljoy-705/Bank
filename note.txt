@@ -92,3 +92,11 @@ Redirection in angular
 
    in private only access by its on class
    in publc it can access all the classes in that class.
+
+
+Angular service file
+--------------------
+     Its a file in angular
+     all components an access the content of service file
+     
+     create -> ng genarate service filename  
